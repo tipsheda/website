@@ -83,6 +83,7 @@ body {
 
 
 .banner-image {
+  max-width: 60em;
   min-width: 25em;
 }
 .banner-content {
