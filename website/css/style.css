@@ -6,6 +6,30 @@
   --common-spacing: 0.45em;
 }
 
+
+body {
+  background-color: #1a143a;
+  color: white;
+  font-family: 'Acme';
+  font-size: 1.5em;
+  margin: 0;
+  cursor: url(https://tipsheda.com/resources/cursor/cursor_4_1.png), auto;
+  animation-duration: 0.8s;
+  animation-name: cursor-animate;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(3);
+}
+
+
+#banner {
+  /* display: flex; */
+}
+
+
+#main {
+  /* display: flex; */
+}
+
 a {
   color: #0f0f0f;
   text-decoration:none;
@@ -29,34 +53,10 @@ a:hover {
   animation-iteration-count: infinite;
   animation-timing-function: steps(5);
   position: relative;
-  top: 0.1em;
-  left: 0.1em;
+  top: 0.125em;
+  left: 0.125em;
   /* font-family: Georgia, serif; */
   /* font-size: 0.91em; */
-}
-
-
-body {
-  background-color: #221a26;
-  color: white;
-  font-family: 'Acme';
-  font-size: 1.5em;
-  margin: 0;
-  cursor: url(https://tipsheda.com/resources/cursor/cursor_4_1.png), auto;
-  animation-duration: 0.8s;
-  animation-name: cursor-animate;
-  animation-iteration-count: infinite;
-  animation-timing-function: steps(3);
-}
-
-
-#banner {
-  /* display: flex; */
-}
-
-
-#main {
-  /* display: flex; */
 }
 
 
@@ -109,7 +109,7 @@ body {
 
 .ography-link {
   margin: 0;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   text-align: center;
   text-wrap: balance;
 }
@@ -145,7 +145,7 @@ body {
   max-height: 13.2em;
   overflow: hidden;
   padding-top: 0.55em;
-  padding-bottom: 0.55em;
+  padding-bottom: 0.30em;
 }
 .resizing-box-item {
   height: 6.25em;
