@@ -80,6 +80,16 @@ a:hover {
   height: 10.8em;
   width: 10.8em;
 }
+.soundcloud-container {
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 25em;
+}
+.soundcloud-container:last-of-type {
+	margin-bottom: 0.5em;
+}
 
 
 .banner-image {
@@ -109,7 +119,7 @@ a:hover {
 
 .ography-link {
   margin: 0;
-  margin-bottom: 2em;
+  margin-bottom: 1.75em;
   text-align: center;
   text-wrap: balance;
 }
