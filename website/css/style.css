@@ -21,11 +21,6 @@ body {
 }
 
 
-#banner {
-  /* display: flex; */
-}
-
-
 #main {
   /* display: flex; */
 }
@@ -92,14 +87,14 @@ a:hover {
 }
 
 
-.banner-image {
-  max-width: 60em;
-  min-width: 36em;
-}
-.banner-content {
+.banner {
   overflow-x: hidden;
   display: flex;
   justify-content: center;
+}
+.banner img {
+  max-width: 60em;
+  min-width: 36em;
 }
 
 
