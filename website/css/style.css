@@ -8,7 +8,8 @@
 
 
 body {
-  background-color: #1a143a;
+  /* background-color: #1a143a; */
+  background-image: url(http://127.0.0.1:8080/resources/background-image-1.jpg);
   color: white;
   font-family: 'Acme';
   font-size: 1.5em;
@@ -40,18 +41,23 @@ a {
      0.125em  0.125em 0px white
 }
 a:hover {
+	cursor: url(https://tipsheda.com/resources/cursor/grabby_3_1.png), auto;
+	animation-duration: 1s;
+	animation-name: grabby-animate;
+	animation-iteration-count: infinite;
+	animation-timing-function: steps(5);
+}
+a:hover:not(:has(img)) {
   color: white;
   text-shadow: none;
-  cursor: url(https://tipsheda.com/resources/cursor/grabby_3_1.png), auto;
-  animation-duration: 1s;
-  animation-name: grabby-animate;
-  animation-iteration-count: infinite;
-  animation-timing-function: steps(5);
   position: relative;
   top: 0.125em;
   left: 0.125em;
   /* font-family: Georgia, serif; */
   /* font-size: 0.91em; */
+}
+a img:hover {
+	filter: saturate(0%) brightness(160%) contrast(120%);
 }
 
 
@@ -84,6 +90,36 @@ a:hover {
 }
 .soundcloud-container:last-of-type {
 	margin-bottom: 0.5em;
+}
+.audio-container {
+	display: flex;
+	flex-wrap: wrap;
+	grid-gap: 0.68em;
+	justify-content: center;
+	overflow: hidden;
+	max-width: 35em;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+	max-height:200px;
+	margin-bottom: 0.75em;
+}
+.audio-item {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	min-width: 200px;
+}
+.audio-item img {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-radius: 12% 12% 0% 0%;
+}
+.audio-item audio {
+	position: absolute;
+	top: 160px;
+	left: 0px;
+	width: 200px
 }
 
 
@@ -146,11 +182,11 @@ a:hover {
   flex-wrap: wrap;
   grid-gap: 0.68em;
   justify-content: center;
-  margin-bottom: var(--common-spacing);
+  margin-bottom: 0.25em;
   max-height: 13.2em;
   overflow: hidden;
   padding-top: 0.55em;
-  padding-bottom: 0.30em;
+  padding-bottom: 0.55em;
 }
 .resizing-box-item {
   height: 6.25em;
