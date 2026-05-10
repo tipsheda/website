@@ -100,10 +100,11 @@ a:hover:not(:has(img)) {
 	justify-content: center;
 	overflow: hidden;
 	max-width: 35em;
+	margin-top: 0.68em;
 	margin-left: 0.5em;
 	margin-right: 0.5em;
 	max-height: 225px;
-	margin-bottom: 0.75em;
+	margin-bottom: 1.75em;
 }
 .audio-item {
 	position: relative;
@@ -115,13 +116,13 @@ a:hover:not(:has(img)) {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	border-radius: 12% 12% 12% 0%;
+	border-radius: 12%;
 }
 .audio-item audio {
 	position: absolute;
-	top: 185px;
-	left: 0px;
-	width: 48px
+	top: 165px;
+	left: 7px;
+	width: 100px
 }
 
 
@@ -155,7 +156,6 @@ a:hover:not(:has(img)) {
 
 .ography-link {
   margin: 0;
-  margin-bottom: 1.75em;
   text-align: center;
   text-wrap: balance;
 }
@@ -164,6 +164,7 @@ a:hover:not(:has(img)) {
 .half-width-scaling-image {
   display: block;
   margin: auto;
+  margin-top: 0.25em;
   max-width: min(14em, 50%);
   width: calc(100% - 1em);
 }
@@ -187,10 +188,10 @@ a:hover:not(:has(img)) {
   flex-wrap: wrap;
   grid-gap: 0.68em;
   justify-content: center;
-  margin-bottom: 0.25em;
+  margin-bottom: 1.2em;
   max-height: 13.2em;
   overflow: hidden;
-  padding-top: 0.55em;
+  padding-top: 0.68em;
   padding-bottom: 0.55em;
 }
 .resizing-box-item {
