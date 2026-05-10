@@ -56,8 +56,10 @@ a:hover:not(:has(img)) {
   /* font-family: Georgia, serif; */
   /* font-size: 0.91em; */
 }
-a img:hover {
-	filter: saturate(0%) brightness(160%) contrast(120%);
+@media (hover: hover), (-ms-high-contrast:none) {
+	a img:hover {
+		filter: saturate(0%) brightness(160%) contrast(120%);
+	}
 }
 
 
@@ -100,7 +102,7 @@ a img:hover {
 	max-width: 35em;
 	margin-left: 0.5em;
 	margin-right: 0.5em;
-	max-height:200px;
+	max-height: 225px;
 	margin-bottom: 0.75em;
 }
 .audio-item {
@@ -113,13 +115,13 @@ a img:hover {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	border-radius: 12% 12% 0% 0%;
+	border-radius: 12% 12% 12% 0%;
 }
 .audio-item audio {
 	position: absolute;
-	top: 160px;
+	top: 185px;
 	left: 0px;
-	width: 225px
+	width: 48px
 }
 
 
