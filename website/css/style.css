@@ -9,7 +9,8 @@
 
 body {
   /* background-color: #1a143a; */
-  background-image: url(https://tipsheda.com/resources/background-image-1.jpg);
+  /* background-image: url(https://tipsheda.com/resources/background-image-1.jpg); */
+  background-image: url(http://127.0.0.1:8080/resources/background-gif-1.gif);
   color: white;
   font-family: 'Acme';
   font-size: 1.5em;
@@ -103,7 +104,7 @@ a:hover:not(:has(img)) {
 	margin-top: 0.68em;
 	margin-left: 0.5em;
 	margin-right: 0.5em;
-	max-height: 225px;
+	max-height: 467px;
 	margin-bottom: 1.75em;
 }
 .audio-item {
@@ -189,7 +190,7 @@ a:hover:not(:has(img)) {
   grid-gap: 0.68em;
   justify-content: center;
   margin-bottom: 1.2em;
-  max-height: 13.2em;
+  max-height: 27.1em;
   overflow: hidden;
   padding-top: 0.68em;
   padding-bottom: 0.55em;
@@ -204,11 +205,13 @@ a:hover:not(:has(img)) {
   object-fit: cover;
   border-radius: 12%;
 }
-.resizing-box-item img:hover {
-  animation-name: zoomHover;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: steps(3);
+@media (hover: hover), (-ms-high-contrast:none) {
+	.resizing-box-item img:hover {
+		animation-name: zoomHover;
+		animation-duration: 1.5s;
+		animation-iteration-count: infinite;
+		animation-timing-function: steps(3);
+	}
 }
 
 
