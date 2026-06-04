@@ -9,8 +9,7 @@
 
 body {
   /* background-color: #1a143a; */
-  /* background-image: url(https://tipsheda.com/resources/background-image-1.jpg); */
-  background-image: url(http://127.0.0.1:8080/resources/background-gif-1.gif);
+  background-image: url(https://tipsheda.com/resources/background-gif-1.gif);
   color: white;
   font-family: 'Acme';
   font-size: 1.5em;
